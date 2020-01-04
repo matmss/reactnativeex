@@ -1,19 +1,27 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View 
+      style={{
+        padding: 70, 
+        flexDirection: 'row-reverse', 
+        widht: '80%', 
+        height: 300, 
+        justifyContent: 'space-between', 
+        alignItems: 'center'
+      }}>
+      <View
+        style={{
+          backgroundColor: 'red',
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+    >
+      <Text>1</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
